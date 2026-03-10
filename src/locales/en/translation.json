@@ -1,0 +1,98 @@
+{
+    "nav": {
+        "systems": "Systems",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
+    "hero": {
+        "audio": "SOUND",
+        "light": "LIGHT",
+        "stage": "STAGE",
+        "visual": "VISUAL",
+        "title1": "PUNTO",
+        "title2": "ORGANIZATION"
+    },
+    "stats": {
+        "years": "YEARS",
+        "yearsSub": "EXPERIENCE IN THE INDUSTRY",
+        "orgs": "EVENTS",
+        "orgsSub": "SUCCESSFULLY COMPLETED",
+        "delivery": "DELIVERY",
+        "deliverySub": "OPERATIONAL RELIABILITY"
+    },
+    "about": {
+        "identification": "[ IDENTIFICATION ]",
+        "desc1": "Punto Sound Organization is an innovative event company offering ",
+        "desc2": "professional sound, light, and stage systems",
+        "desc3": " that add value to your events. We blend technology, experience, and aesthetics to design unforgettable moments.",
+        "visionTitle": "OUR VISION",
+        "visionDesc": "To be the first brand that comes to mind in the event industry when quality, trust, and technical excellence are mentioned.",
+        "missionTitle": "OUR MISSION",
+        "missionDesc": "To provide customized solutions for every organization, exceeding our clients' expectations at the highest level while delivering flawless technical infrastructure."
+    },
+    "services": {
+        "title1": "SERVICE",
+        "title2": "SPECTRUM",
+        "audioTitle": "PROFESSIONAL SOUND SYSTEMS",
+        "audio1": "Concert sound systems",
+        "audio2": "Wedding and engagement organizations",
+        "audio3": "Corporate events and launches",
+        "audio4": "Outdoor and festival sound systems",
+        "audio5": "Meeting and conference sound solutions",
+        "lightTitle": "LIGHTING SYSTEMS",
+        "light1": "Stage lighting design",
+        "light2": "Robotic lighting systems",
+        "light3": "Ambient lighting",
+        "light4": "LED screens and visual systems",
+        "stageTitle": "STAGE AND TECHNICAL INFRASTRUCTURE",
+        "stage1": "Stage setup",
+        "stage2": "Truss systems",
+        "stage3": "Generator and energy solutions",
+        "stage4": "Technical crew and operator support"
+    },
+    "features": {
+        "title1": "Why",
+        "title2": "Punto Sound",
+        "title3": "Organization?",
+        "f1": "Cutting-edge equipment",
+        "f2": "Experienced technical crew",
+        "f3": "On-time setup and delivery",
+        "f4": "Affordable pricing – high quality balance",
+        "f5": "Customer satisfaction oriented service"
+    },
+    "systemStack": {
+        "title1": "SYSTEM",
+        "title2": "STACK",
+        "c1": "Line Array",
+        "c2": "LED Wall",
+        "c3": "Stage & Truss",
+        "c4": "Smart Lighting",
+        "c5": "Operations Team",
+        "init": "[INITIALIZE]"
+    },
+    "gallery": {
+        "title1": "PROJECT",
+        "title2": "GALLERY",
+        "desc": "Glimpses and scenes from our successfully completed events."
+    },
+    "events": [
+        "Weddings & Engagements",
+        "Concerts & Festivals",
+        "Corporate Launches",
+        "Openings & Invitations",
+        "Graduation Ceremonies",
+        "Special Day Organizations"
+    ],
+    "contact": {
+        "desc1": "",
+        "desc2": "Punto Sound Organization",
+        "desc3": " is always with you to make your event unforgettable with a ",
+        "desc4": "professional touch.",
+        "desc5": "",
+        "btn": "GET AN ESTIMATE",
+        "locTitle": "LOCATION",
+        "loc": "📍 Buca / IZMIR",
+        "opTitle": "CENTER",
+        "techTitle": "TECHNICAL"
+    }
+}

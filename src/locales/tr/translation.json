@@ -1,0 +1,98 @@
+{
+    "nav": {
+        "systems": "Sistemler",
+        "projects": "Projeler",
+        "contact": "İletişim"
+    },
+    "hero": {
+        "audio": "SES",
+        "light": "IŞIK",
+        "stage": "SAHNE",
+        "visual": "GÖRÜNTÜ",
+        "title1": "PUNTO",
+        "title2": "ORGANİZASYON"
+    },
+    "stats": {
+        "years": "YIL",
+        "yearsSub": "SEKTÖRDE DENEYİM",
+        "orgs": "ORGANİZASYON",
+        "orgsSub": "BAŞARIYLA TAMAMLANAN",
+        "delivery": "TESLİM",
+        "deliverySub": "OPERASYONEL GÜVENİLİRLİK"
+    },
+    "about": {
+        "identification": "[ IDENTIFICATION ]",
+        "desc1": "Punto Ses Organizasyon, etkinliklerinize değer katan ",
+        "desc2": "profesyonel ses, ışık ve sahne sistemleri",
+        "desc3": " hizmeti sunan yenilikçi bir organizasyon firmasıdır. Teknoloji, deneyim ve estetiği bir araya getirerek unutulmaz anlar tasarlıyoruz.",
+        "visionTitle": "VİZYONUMUZ",
+        "visionDesc": "Etkinlik sektöründe kalite, güven ve teknik mükemmeliyet denildiğinde ilk akla gelen marka olmak.",
+        "missionTitle": "MİSYONUMUZ",
+        "missionDesc": "Her organizasyona özel çözümler üreterek, müşterilerimizin beklentilerini en üst seviyede karşılamak ve kusursuz bir teknik altyapı sunmak."
+    },
+    "services": {
+        "title1": "HİZMET",
+        "title2": "SPEKTRUMU",
+        "audioTitle": "PROFESYONEL SES SİSTEMLERİ",
+        "audio1": "Konser ses sistemleri",
+        "audio2": "Düğün ve nişan organizasyonları",
+        "audio3": "Kurumsal etkinlik ve lansmanlar",
+        "audio4": "Açık hava ve festival ses sistemleri",
+        "audio5": "Toplantı ve konferans ses çözümleri",
+        "lightTitle": "IŞIK SİSTEMLERİ",
+        "light1": "Sahne ışık tasarımı",
+        "light2": "Robot ışık sistemleri",
+        "light3": "Ambiyans aydınlatma",
+        "light4": "LED ekran ve görsel sistemler",
+        "stageTitle": "SAHNE VE TEKNİK ALTYAPI",
+        "stage1": "Sahne kurulumu",
+        "stage2": "Truss sistemleri",
+        "stage3": "Jeneratör ve enerji çözümleri",
+        "stage4": "Teknik ekip ve operatör desteği"
+    },
+    "features": {
+        "title1": "Neden",
+        "title2": "Punto Ses",
+        "title3": "Organizasyon?",
+        "f1": "Son teknoloji ekipman",
+        "f2": "Deneyimli teknik ekip",
+        "f3": "Zamanında kurulum ve teslim",
+        "f4": "Uygun fiyat – yüksek kalite dengesi",
+        "f5": "Müşteri memnuniyeti odaklı hizmet"
+    },
+    "systemStack": {
+        "title1": "SYSTEM",
+        "title2": "STACK",
+        "c1": "Line Array",
+        "c2": "LED Wall",
+        "c3": "Sahne & Truss",
+        "c4": "Akıllı Işık",
+        "c5": "Operasyon Ekibi",
+        "init": "[INITIALIZE]"
+    },
+    "gallery": {
+        "title1": "PROJE",
+        "title2": "GALERİSİ",
+        "desc": "Başarıyla tamamladığımız etkinliklerden kareler ve sahneler."
+    },
+    "events": [
+        "Düğün & Nişan",
+        "Konser & Festival",
+        "Kurumsal Lansman",
+        "Açılış & Davet",
+        "Mezuniyet Törenleri",
+        "Özel Gün Organizasyonları"
+    ],
+    "contact": {
+        "desc1": "Etkinliğinizi ",
+        "desc2": "profesyonel bir dokunuşla",
+        "desc3": " unutulmaz hale getirmek için ",
+        "desc4": "Punto Ses Organizasyon",
+        "desc5": " her zaman yanınızda.",
+        "btn": "TEKLİF AL",
+        "locTitle": "LOKASYON",
+        "loc": "📍 Buca / İZMİR",
+        "opTitle": "MERKEZ",
+        "techTitle": "TEKNİK"
+    }
+}

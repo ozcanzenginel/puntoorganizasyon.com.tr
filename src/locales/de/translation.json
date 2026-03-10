@@ -1,0 +1,98 @@
+{
+    "nav": {
+        "systems": "Systeme",
+        "projects": "Projekte",
+        "contact": "Kontakt"
+    },
+    "hero": {
+        "audio": "KLANG",
+        "light": "LICHT",
+        "stage": "BÜHNE",
+        "visual": "BILD",
+        "title1": "PUNTO",
+        "title2": "ORGANISATION"
+    },
+    "stats": {
+        "years": "JAHRE",
+        "yearsSub": "ERFAHRUNG IN DER BRANCHE",
+        "orgs": "VERANSTALTUNGEN",
+        "orgsSub": "ERFOLGREICH ABGESCHLOSSEN",
+        "delivery": "LIEFERUNG",
+        "deliverySub": "OPERATIONELLE ZUVERLÄSSIGKEIT"
+    },
+    "about": {
+        "identification": "[ IDENTIFICATION ]",
+        "desc1": "Punto Sound Organisation ist ein innovatives Veranstaltungsunternehmen, das ",
+        "desc2": "professionelle Ton-, Licht- und Bühnensysteme",
+        "desc3": " anbietet, die Ihren Veranstaltungen Mehrwert verleihen. Wir vereinen Technologie, Erfahrung und Ästhetik, um unvergessliche Momente zu gestalten.",
+        "visionTitle": "UNSERE VISION",
+        "visionDesc": "Die erste Marke zu sein, die einem in der Veranstaltungsbranche in den Sinn kommt, wenn Qualität, Vertrauen und technische Exzellenz erwähnt werden.",
+        "missionTitle": "UNSERE MISSION",
+        "missionDesc": "Maßgeschneiderte Lösungen für jede Organisation bereitzustellen, die Erwartungen unserer Kunden auf höchstem Niveau zu übertreffen und eine fehlerfreie technische Infrastruktur zu liefern."
+    },
+    "services": {
+        "title1": "DIENST",
+        "title2": "SPEKTRUM",
+        "audioTitle": "PROFESSIONELLE TONSYSSTEME",
+        "audio1": "Konzert-Tonsysteme",
+        "audio2": "Hochzeits- und Verlobungsorganisationen",
+        "audio3": "Firmenveranstaltungen und Produkteinführungen",
+        "audio4": "Outdoor- und Festival-Tonsysteme",
+        "audio5": "Meeting- und Konferenztonlösungen",
+        "lightTitle": "BELEUCHTUNGSSYSTEME",
+        "light1": "Bühnenlichtdesign",
+        "light2": "Roboter-Lichtsysteme",
+        "light3": "Ambiente-Beleuchtung",
+        "light4": "LED-Bildschirme und visuelle Systeme",
+        "stageTitle": "BÜHNE UND TECHNISCHE INFRASTRUKTUR",
+        "stage1": "Bühnenaufbau",
+        "stage2": "Traversensysteme",
+        "stage3": "Generator- und Energielösungen",
+        "stage4": "Technische Crew und Bedienerunterstützung"
+    },
+    "features": {
+        "title1": "Warum",
+        "title2": "Punto Klang",
+        "title3": "Organisation?",
+        "f1": "Modernste Ausrüstung",
+        "f2": "Erfahrenes technisches Team",
+        "f3": "Pünktlicher Aufbau und Lieferung",
+        "f4": "Erschwingliche Preise – hohe Qualität",
+        "f5": "Kundenorientierter Service"
+    },
+    "systemStack": {
+        "title1": "SYSTEM",
+        "title2": "STACK",
+        "c1": "Line Array",
+        "c2": "LED-Wand",
+        "c3": "Bühne & Truss",
+        "c4": "Intelligentes Licht",
+        "c5": "Einsatzteam",
+        "init": "[INITIALIZE]"
+    },
+    "gallery": {
+        "title1": "PROJEKT",
+        "title2": "GALERIE",
+        "desc": "Einblicke und Szenen aus unseren erfolgreich abgeschlossenen Veranstaltungen."
+    },
+    "events": [
+        "Hochzeiten & Verlobungen",
+        "Konzerte & Festivals",
+        "Firmen-Launches",
+        "Eröffnungen & Einladungen",
+        "Abschlussfeiern",
+        "Besondere Tagesorganisationen"
+    ],
+    "contact": {
+        "desc1": "",
+        "desc2": "Punto Sound Organisation",
+        "desc3": " ist immer für Sie da, um Ihre Veranstaltung mit einer ",
+        "desc4": "professionellen Note",
+        "desc5": " unvergesslich zu machen.",
+        "btn": "ANGEBOT EINHOLEN",
+        "locTitle": "STANDORT",
+        "loc": "📍 Buca / IZMIR",
+        "opTitle": "ZENTRUM",
+        "techTitle": "TECHNISCH"
+    }
+}

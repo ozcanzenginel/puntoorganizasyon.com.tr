@@ -1,0 +1,129 @@
+/* 
+---------------------------------------------
+pricing
+--------------------------------------------- 
+*/
+
+.pricing-item {
+	background: #FFFFFF;
+	box-shadow: 0 2px 48px 0 rgba(0,0,0,0.13);
+	border-radius: 5px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+
+	&.active {
+		.pricing-header {
+			position: relative;
+
+			.pricing-title {
+				color: #fff;
+			}
+		}
+
+		.pricing-body {
+			.price-wrapper {
+				background-image: linear-gradient(135deg, $gradientDark 0%, $gradientLight 100%);
+
+				.currency {
+					color: #fff;
+				}
+
+				.price {
+					color: #fff;
+				}
+
+				.period {
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.pricing-header	{
+		text-align: center;
+		display: block;
+		position: relative;
+		padding-bottom: 10px;
+
+		.pricing-title {
+			@include font($normal, 14px);
+			letter-spacing: 1px;
+			color: #fff;
+			position: absolute;
+			width: 180px;
+			height: 40px;
+			line-height: 40px;
+			left: 0px;
+			right: 0px;
+			margin: auto;
+			top: -20px;
+			@include radius(5px);
+			background-image: linear-gradient(135deg, $gradientDark 0%, $gradientLight 100%);
+		}
+	}
+
+	.pricing-body {
+		margin-bottom: 40px;
+
+		.price-wrapper {
+			text-align: center;
+			margin-top: 40px;
+			margin-bottom: 30px;
+			padding-top: 10px;
+			background: #f6f6f6;
+
+			.currency {
+				height: 47px;
+				@include font($medium, 20px);
+				color: $primaryColor;
+				position: relative;
+				top: -15px;
+			}
+
+			.price {
+				@include font($bold, 34px);
+				color: $primaryColor;
+				letter-spacing: 2.12px;
+			}
+
+			.period {
+				@include font($bold, 14px);
+				color: $primaryColor;
+				letter-spacing: 0.88px;
+			}
+		}
+
+		.list {
+
+			li {
+				text-align: center;
+				margin-bottom: 12px;
+				@include font($normal, 14px);
+				color: #CCDCEA;
+				letter-spacing: 0.88px;
+				text-decoration: line-through;
+
+				&.active {
+					color: $headingDark;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
+	.pricing-footer {
+		text-align: center;
+
+		.btn-primary-line {
+			border: 1px solid $primaryColor;
+			color: $primaryColor;
+			height: 36px;
+			line-height: 36px;
+
+			&:hover {
+				background: $primaryColor;
+				color: #fff;
+			}
+		}
+	}
+}

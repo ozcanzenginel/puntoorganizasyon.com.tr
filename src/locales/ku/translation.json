@@ -1,0 +1,98 @@
+{
+    "nav": {
+        "systems": "Sîstem",
+        "projects": "Proje",
+        "contact": "Têkilî"
+    },
+    "hero": {
+        "audio": "DENG",
+        "light": "RONAHÎ",
+        "stage": "DIK",
+        "visual": "DÎMEN",
+        "title1": "PUNTO",
+        "title2": "RÊXISTINA"
+    },
+    "stats": {
+        "years": "SAL",
+        "yearsSub": "TECRUBEYÊN DI SEKTORÊ DE",
+        "orgs": "RÊXISTIN",
+        "orgsSub": "BI SERKEFTÎ HATINE TEMAMKIRIN",
+        "delivery": "TESLÎM",
+        "deliverySub": "Baweriya OPERASYONEL"
+    },
+    "about": {
+        "identification": "[ IDENTIFICATION ]",
+        "desc1": "Punto Ses Organizasyon, fîrmayeke rêxistinê ya nûjen e ku ",
+        "desc2": "sîstemên deng, ronahî û dikê yên profesyonel",
+        "desc3": " pêşkêş dike ku nirxê dide çalakiyên we. Em teknolojî, tecrube û estetîkê tînin cem hev da ku demên nayên jibîrkirin dîzayn bikin.",
+        "visionTitle": "VÎZYONA ME",
+        "visionDesc": "Dema ku qala kalîte, bawerî û bêqisûriya teknîkî tê kirin, di sektora çalakiyan de bibe marqeya yekem ku tê hişê mirov.",
+        "missionTitle": "MÎSYONA ME",
+        "missionDesc": "Ji bo her rêxistinê çareseriyên taybet hilberînin, hêviyên xerîdarên xwe di asta herî jor de pêşwazî bikin û binesaziyeke teknîkî ya bêqisûr pêşkêş bikin."
+    },
+    "services": {
+        "title1": "SPEKTRUMA",
+        "title2": "XIZMETAN",
+        "audioTitle": "SÎSTEMÊN DENG YÊN PROFESYONEL",
+        "audio1": "Sîstemên deng ên konseran",
+        "audio2": "Rêxistinên dawet û dezgîran",
+        "audio3": "Çalakî û danasînên pargîdanî",
+        "audio4": "Sîstemên deng ên hewaya servekirî û mîhrîcanan",
+        "audio5": "Çareseriyên deng ên civîn û konferansan",
+        "lightTitle": "SÎSTEMÊN RONAHIYÊ",
+        "light1": "Dîzayna ronahiya dikê",
+        "light2": "Sîstemên ronahiyê yên robotîk",
+        "light3": "Ronahiya derdorê",
+        "light4": "Ekranê LED û sîstemên dîtbarî",
+        "stageTitle": "BINESAZIYA DIK Û TEKNÎKÎ",
+        "stage1": "Sazkirina dikê",
+        "stage2": "Sîstemên Truss",
+        "stage3": "Çareseriyên jenerator û enerjiyê",
+        "stage4": "Destekirina tîma teknîkî û operator"
+    },
+    "features": {
+        "title1": "Çima",
+        "title2": "Rêxistina Deng",
+        "title3": "a Punto?",
+        "f1": "Cihêzên teknolojiya herî dawî",
+        "f2": "Tîmeke teknîkî ya bitecrube",
+        "f3": "Sazkirin û radestkirina di wextê xwe de",
+        "f4": "Bihaya minasib - hevsengiya qalîteya bilind",
+        "f5": "Xizmeta bi armanca razîbûna xerîdar"
+    },
+    "systemStack": {
+        "title1": "SÎSTEM",
+        "title2": "STACK",
+        "c1": "Line Array",
+        "c2": "Dîwarê LED",
+        "c3": "Dik & Truss",
+        "c4": "Ronahiya Zîrek",
+        "c5": "Tîma Operasyonê",
+        "init": "[INITIALIZE]"
+    },
+    "gallery": {
+        "title1": "GALERIYA",
+        "title2": "PROJEYÊ",
+        "desc": "Dîmen û kêliyên ji çalakiyên me yên ku bi serkeftî qediyane."
+    },
+    "events": [
+        "Dawet & Dezgîran",
+        "Konser & Festîval",
+        "Danasînên Pargîdanî",
+        "Vekirin & Vexwendname",
+        "Merasîmên Mezûniyetê",
+        "Rêxistinên Rojên Taybet"
+    ],
+    "contact": {
+        "desc1": "Ji bo ku we çalakiya xwe bi ",
+        "desc2": "têkiliyek profesyonel",
+        "desc3": " bêbîrkirin bike, ",
+        "desc4": "Punto Rêxistina Deng",
+        "desc5": " her tim bi we re ye.",
+        "btn": "PÊŞNÎYARA BIHAYÊ BIGIRIN",
+        "locTitle": "CIH",
+        "loc": "📍 Buca / ÎZMÎR",
+        "opTitle": "NAVENDA",
+        "techTitle": "TEKNÎK"
+    }
+}

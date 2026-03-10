@@ -1,0 +1,244 @@
+/* 
+---------------------------------------------
+aside
+--------------------------------------------- 
+*/
+
+aside.default-aside {
+	@include transition(.3s);
+
+	.sidebar {
+
+		ul {
+			@include radius(4px);
+			overflow: hidden;
+			background: #fff;
+			box-shadow: 0 2px 48px 0 rgba(0,0,0,0.06);
+			overflow: hidden;
+			@include radius(5px);
+			margin-bottom: 30px;
+
+			li {
+				position: relative;
+
+				&:hover, &.active {
+
+					&:before, &:after {
+						opacity: 1;
+					}
+
+					a {
+						&:hover {
+							padding-left: 60px;
+						}
+					}
+				}
+
+				&:nth-child(even) {
+					background: $secondaryColor;
+				}
+
+				&:last-child {
+					a {
+						border: none;
+					}
+				}
+	
+				&:before {
+					content: '';
+					position: absolute;
+					left: 0px;
+					top: 0px;
+					width: 3px;
+					height: 50px;
+					background: $primaryColor;
+					opacity: 0;
+					@include transition(.3s);
+				}
+
+				&:after {
+					content: '';
+					position: absolute;
+					right: 0px;
+					top: 0px;
+					width: 3px;
+					height: 50px;
+					background: $primaryColor;
+					opacity: 0;
+					@include transition(.3s);
+				}
+
+				a {
+					display: block;
+					height: 50px;
+					line-height: 50px;
+					padding-left: 50px;
+					position: relative;
+					@include font($normal, 14px);
+					color: $headingDark;
+					letter-spacing: 0.88px;
+					@include transition(.3s);
+					position: relative;
+
+					&:hover {
+						padding-left: 70px;
+					}
+
+					&:after {
+						font-family: FontAwesome;
+    					content: "\f105";
+    					position: absolute;
+    					left: 30px;
+    					color: $headingDark;
+					}
+
+					span {
+						float: right;
+						margin-right: 30px;
+						display: inline-block;
+						background: #F0F0F0;
+						height: 20px;
+						line-height: 20px;
+						padding-left: 10px;
+						padding-right: 10px;
+						font-size: 10px;
+						color: $textDark;
+						margin-top: 18px;
+						@include radius(100px);
+					}
+				}
+			}
+		}
+
+		.search-widget {
+			margin-bottom: 30px;
+			margin-top: -5px;
+			
+			.search {
+				height: 60px;
+				position: relative;
+
+				input {
+					position: absolute;
+					width: 95%;
+					height: 50px;
+					left: 0px;
+					border: none;
+					background: #fff;
+					outline: none;
+					top: 5px;
+					box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+					@include radius(5px);
+					padding-left: 20px;
+					@include transition(.3s);
+					@include font($normal, 14px);
+					color: #6F8BA4;
+					letter-spacing: 0.88px;
+					z-index: 1;
+
+					&:focus {
+						padding-left: 30px;
+						box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.13);
+					}
+
+					&::-webkit-input-placeholder {
+						@include font($normal, 14px);
+						color: #6F8BA4;
+						letter-spacing: 0.88px;
+					}
+
+					&:-moz-placeholder {
+						@include font($normal, 14px);
+						color: #6F8BA4;
+						letter-spacing: 0.88px;
+					}
+				}
+
+				button {
+					width: 60px;
+					height: 60px;
+					position: absolute;
+					z-index: 2;
+					right: 0px;
+					@include radius(100px);
+					border: none;
+					background-image: linear-gradient(135deg, $gradientDark 0%, $gradientLight 100%);
+					color: #fff;
+					outline: none;
+					cursor: pointer;
+				}
+			}
+		}
+
+		.widget-tags {
+			padding: 30px;
+			padding-bottom: 20px;
+			overflow: hidden;
+			@include radius(4px);
+			background: #fff;
+			box-shadow: 0 2px 48px 0 rgba(0,0,0,0.06);
+
+			a {
+				float: left;
+				margin-right: 10px;
+				margin-bottom: 10px;
+				background: #f5f5f5;
+				padding-left: 10px;
+				padding-right: 10px;
+				@include font($normal, 14px);
+				color: $headingDark;
+				@include radius(4px);
+				@include transition(.3s);
+
+				&:hover {
+					background: $primaryColor;
+					color: #fff;
+				}
+			}
+		}
+
+		.box {
+			@include radius(5px);
+			text-align: center;
+			height: 230px;
+			position: relative;
+			margin-bottom: 30px;
+
+			&:before {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				background-image: linear-gradient(135deg, $gradientDark 0%, $gradientLight 100%);
+				z-index: 2;
+				left: 0px;
+				top: 0px;
+				opacity: .85;
+			}
+
+			.hovered {
+				position: absolute;
+				z-index: 3;
+				padding-left: 30px;
+				padding-right: 30px;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				transform: translateY(-50%);
+
+				p {
+					color: #fff;
+					@include font($bold, 18px);
+					line-height: 30px;
+					letter-spacing: 1.12px;
+					margin-bottom: 30px;
+				}
+
+				a {
+					height: 36px;
+					line-height: 36px;
+					margin-bottom: 0px;
+				}
+			}
+		}
+	}
+}
