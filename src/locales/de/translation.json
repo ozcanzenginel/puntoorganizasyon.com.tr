@@ -1,7 +1,7 @@
 {
     "nav": {
         "systems": "Systeme",
-        "projects": "Projekte",
+        "projects": "Galerie",
         "contact": "Kontakt"
     },
     "hero": {
@@ -21,14 +21,15 @@
         "deliverySub": "OPERATIONELLE ZUVERLÄSSIGKEIT"
     },
     "about": {
-        "identification": "[ IDENTIFICATION ]",
-        "desc1": "Punto Sound Organisation ist ein innovatives Veranstaltungsunternehmen, das ",
-        "desc2": "professionelle Ton-, Licht- und Bühnensysteme",
-        "desc3": " anbietet, die Ihren Veranstaltungen Mehrwert verleihen. Wir vereinen Technologie, Erfahrung und Ästhetik, um unvergessliche Momente zu gestalten.",
+        "title": "ÜBER UNS",
+        "desc1": "Punto Sound & Organization ist ein innovatives Unternehmen, das professionelle Ton-, Licht- und Bühnensystemdienste in der Veranstaltungsbranche anbietet.",
+        "desc2": "Mit unserem erfahrenen Technikteam und modernster Ausrüstung produzieren wir maßgeschneiderte Lösungen für jede Organisation.",
+        "desc3": "Unser Ziel ist es, unvergessliche Events mit fehlerfreier technischer Infrastruktur zu realisieren.",
         "visionTitle": "UNSERE VISION",
-        "visionDesc": "Die erste Marke zu sein, die einem in der Veranstaltungsbranche in den Sinn kommt, wenn Qualität, Vertrauen und technische Exzellenz erwähnt werden.",
+        "visionDesc1": "Die erste Marke zu sein, die einem in Bezug auf Qualität und Vertrauen in der Branche in den Sinn kommt.",
+        "visionDesc2": "Technologische Innovationen zu verfolgen und in jeder Organisation maximale Leistung zu bieten.",
         "missionTitle": "UNSERE MISSION",
-        "missionDesc": "Maßgeschneiderte Lösungen für jede Organisation bereitzustellen, die Erwartungen unserer Kunden auf höchstem Niveau zu übertreffen und eine fehlerfreie technische Infrastruktur zu liefern."
+        "missionDesc1": "Die Bedürfnisse unserer Kunden genau zu analysieren, die am besten geeigneten technischen Lösungen anzubieten und jede Veranstaltung in einen professionellen Erfolg zu verwandeln."
     },
     "services": {
         "title1": "DIENST",

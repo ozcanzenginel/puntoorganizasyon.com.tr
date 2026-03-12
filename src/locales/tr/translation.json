@@ -1,7 +1,7 @@
 {
     "nav": {
         "systems": "Sistemler",
-        "projects": "Projeler",
+        "projects": "Galeri",
         "contact": "İletişim"
     },
     "hero": {
@@ -21,14 +21,15 @@
         "deliverySub": "OPERASYONEL GÜVENİLİRLİK"
     },
     "about": {
-        "identification": "[ IDENTIFICATION ]",
-        "desc1": "Punto Ses Organizasyon, etkinliklerinize değer katan ",
-        "desc2": "profesyonel ses, ışık ve sahne sistemleri",
-        "desc3": " hizmeti sunan yenilikçi bir organizasyon firmasıdır. Teknoloji, deneyim ve estetiği bir araya getirerek unutulmaz anlar tasarlıyoruz.",
+        "title": "HAKKIMIZDA",
+        "desc1": "Punto Ses Organizasyon, etkinlik sektöründe profesyonel ses, ışık ve sahne sistemleri hizmeti sunan yenilikçi bir firmadır.",
+        "desc2": "Deneyimli teknik ekibimiz ve son teknoloji ekipmanlarımız ile her organizasyona özel çözümler üretmekteyiz.",
+        "desc3": "Amacımız; kusursuz teknik altyapı ile unutulmaz etkinlikler gerçekleştirmektir.",
         "visionTitle": "VİZYONUMUZ",
-        "visionDesc": "Etkinlik sektöründe kalite, güven ve teknik mükemmeliyet denildiğinde ilk akla gelen marka olmak.",
+        "visionDesc1": "Sektörde kalite ve güven denildiğinde ilk akla gelen marka olmak.",
+        "visionDesc2": "Teknolojik yenilikleri takip ederek her organizasyonda maksimum performans sunmak.",
         "missionTitle": "MİSYONUMUZ",
-        "missionDesc": "Her organizasyona özel çözümler üreterek, müşterilerimizin beklentilerini en üst seviyede karşılamak ve kusursuz bir teknik altyapı sunmak."
+        "missionDesc1": "Müşterilerimizin ihtiyaçlarını doğru analiz ederek, en uygun teknik çözümleri sunmak ve her etkinliği profesyonel bir başarıya dönüştürmek."
     },
     "services": {
         "title1": "HİZMET",

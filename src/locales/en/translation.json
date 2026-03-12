@@ -1,7 +1,7 @@
 {
     "nav": {
         "systems": "Systems",
-        "projects": "Projects",
+        "projects": "Gallery",
         "contact": "Contact"
     },
     "hero": {
@@ -21,14 +21,15 @@
         "deliverySub": "OPERATIONAL RELIABILITY"
     },
     "about": {
-        "identification": "[ IDENTIFICATION ]",
-        "desc1": "Punto Sound Organization is an innovative event company offering ",
-        "desc2": "professional sound, light, and stage systems",
-        "desc3": " that add value to your events. We blend technology, experience, and aesthetics to design unforgettable moments.",
+        "title": "ABOUT US",
+        "desc1": "Punto Sound & Organization is an innovative company providing professional sound, light, and stage systems services in the event industry.",
+        "desc2": "With our experienced technical team and state-of-the-art equipment, we produce customized solutions for every organization.",
+        "desc3": "Our goal is to realize unforgettable events with flawless technical infrastructure.",
         "visionTitle": "OUR VISION",
-        "visionDesc": "To be the first brand that comes to mind in the event industry when quality, trust, and technical excellence are mentioned.",
+        "visionDesc1": "To be the first brand that comes to mind when it comes to quality and trust in the sector.",
+        "visionDesc2": "To follow technological innovations and provide maximum performance in every organization.",
         "missionTitle": "OUR MISSION",
-        "missionDesc": "To provide customized solutions for every organization, exceeding our clients' expectations at the highest level while delivering flawless technical infrastructure."
+        "missionDesc1": "To accurately analyze the needs of our customers, offer the most appropriate technical solutions, and turn every event into a professional success."
     },
     "services": {
         "title1": "SERVICE",

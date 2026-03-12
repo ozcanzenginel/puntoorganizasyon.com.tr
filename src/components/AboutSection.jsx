@@ -32,21 +32,30 @@ export default function AboutSection() {
         <section ref={sectionRef} id="about" aria-label="Hakkımızda" className="py-16 md:py-20 bg-brutal-black border-y border-brutal-cement/20 relative">
             <div className="max-w-7xl mx-auto px-8 relative z-10" ref={textRef}>
 
+                {/* HAKKIMIZDA (About Us) Section */}
+                <div className="mb-16 md:mb-24 text-center md:text-left max-w-4xl mx-auto md:mx-0">
+                    <h2 className="text-3xl md:text-5xl font-black tracking-tighter mb-6 text-white uppercase">{t('about.title')}</h2>
+                    <div className="font-mono text-brutal-cement/80 leading-relaxed text-sm md:text-base space-y-4">
+                        <p>{t('about.desc1')}</p>
+                        <p>{t('about.desc2')}</p>
+                        <p>{t('about.desc3')}</p>
+                    </div>
+                </div>
 
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-                    <div className="border-l-2 border-brutal-red pl-8">
-                        <h3 className="text-xl md:text-3xl font-black tracking-tighter mb-4 text-brutal-cement">{t('about.visionTitle')}</h3>
-                        <p className="font-mono text-brutal-cement/70 leading-relaxed text-xs md:text-sm">
-                            {t('about.visionDesc')}
-                        </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16">
+                    <div className="border-l-2 border-brutal-red pl-6 md:pl-8">
+                        <h3 className="text-xl md:text-3xl font-black tracking-tighter mb-4 text-brutal-cement uppercase">{t('about.visionTitle')}</h3>
+                        <div className="font-mono text-brutal-cement/70 leading-relaxed text-xs md:text-sm space-y-3">
+                            <p>{t('about.visionDesc1')}</p>
+                            <p>{t('about.visionDesc2')}</p>
+                        </div>
                     </div>
 
-                    <div className="border-l-2 border-brutal-red pl-8">
-                        <h3 className="text-xl md:text-3xl font-black tracking-tighter mb-4 text-brutal-cement">{t('about.missionTitle')}</h3>
-                        <p className="font-mono text-brutal-cement/70 leading-relaxed text-xs md:text-sm">
-                            {t('about.missionDesc')}
-                        </p>
+                    <div className="border-l-2 border-brutal-red pl-6 md:pl-8">
+                        <h3 className="text-xl md:text-3xl font-black tracking-tighter mb-4 text-brutal-cement uppercase">{t('about.missionTitle')}</h3>
+                        <div className="font-mono text-brutal-cement/70 leading-relaxed text-xs md:text-sm space-y-3">
+                            <p>{t('about.missionDesc1')}</p>
+                        </div>
                     </div>
                 </div>
 

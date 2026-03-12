@@ -1,7 +1,7 @@
 {
     "nav": {
         "systems": "Sîstem",
-        "projects": "Proje",
+        "projects": "Galeriya",
         "contact": "Têkilî"
     },
     "hero": {
@@ -21,14 +21,15 @@
         "deliverySub": "Baweriya OPERASYONEL"
     },
     "about": {
-        "identification": "[ IDENTIFICATION ]",
-        "desc1": "Punto Ses Organizasyon, fîrmayeke rêxistinê ya nûjen e ku ",
-        "desc2": "sîstemên deng, ronahî û dikê yên profesyonel",
-        "desc3": " pêşkêş dike ku nirxê dide çalakiyên we. Em teknolojî, tecrube û estetîkê tînin cem hev da ku demên nayên jibîrkirin dîzayn bikin.",
+        "title": "DERBARÊ ME DE",
+        "desc1": "Punto Deng û Rêxistin pargîdaniyek nûjen e ku di pîşesaziya bûyeran de karûbarên pergalên deng, ronahî û qonaxên pîşeyî peyda dike.",
+        "desc2": "Bi tîmê meyê teknîkî yê xwedî ezmûn û alavên pêşkeftî, em ji bo her rêxistinê çareseriyên xwerû hilberînin.",
+        "desc3": "Armanca me ew e ku em bi binesaziya teknîkî ya bêkêmasî bûyerên jibîrnekirî pêk bînin.",
         "visionTitle": "VÎZYONA ME",
-        "visionDesc": "Dema ku qala kalîte, bawerî û bêqisûriya teknîkî tê kirin, di sektora çalakiyan de bibe marqeya yekem ku tê hişê mirov.",
+        "visionDesc1": "Bibe yekem marqeya ku gava di sektorê de tê ser qalîteyê û pêbaweriyê tê bîra xwe.",
+        "visionDesc2": "Ji bo şopandina nûjeniyên teknolojîk û di her rêxistinê de performansa herî zêde peyda dike.",
         "missionTitle": "MÎSYONA ME",
-        "missionDesc": "Ji bo her rêxistinê çareseriyên taybet hilberînin, hêviyên xerîdarên xwe di asta herî jor de pêşwazî bikin û binesaziyeke teknîkî ya bêqisûr pêşkêş bikin."
+        "missionDesc1": "Ji bo analîzkirina hewcedariyên xerîdarên me bi rehetî, çareseriyên teknîkî yên herî guncan pêşkêş dikin, û her bûyerek bi serfiraziyek pîşeyî veguherînin."
     },
     "services": {
         "title1": "SPEKTRUMA",

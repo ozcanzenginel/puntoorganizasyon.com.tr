@@ -14,22 +14,6 @@ export default function HeroArea() {
     const orb2Ref = useRef(null)
     const orb3Ref = useRef(null)
 
-    const heroImages = [
-        '/hero/1.jpg',
-        '/hero/2.jpg',
-        '/hero/3.jpg',
-        '/hero/4.jpg',
-        '/hero/5.jpg'
-    ]
-    const [currentImg, setCurrentImg] = useState(0)
-
-    useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrentImg(prev => (prev + 1) % heroImages.length)
-        }, 5000)
-        return () => clearInterval(timer)
-    }, [])
-
     useEffect(() => {
         let ctx = gsap.context(() => {
             // Intro Animation (Swapped delays so big title comes first)
@@ -67,7 +51,6 @@ export default function HeroArea() {
                 scrub: true,
                 animation: gsap.timeline()
                     .to(bgRef.current, {
-                        filter: 'blur(0px) grayscale(0%)', // goes to full color/focus
                         scale: 1.05
                     }, 0)
                     .to(title2Ref.current, {
@@ -91,25 +74,18 @@ export default function HeroArea() {
     return (
         <section className="w-full bg-brutal-black pt-[100px] md:pt-[130px] pb-10 px-4 md:px-8 border-b border-brutal-cement/20">
             <div ref={heroRef} className="relative w-full h-[50vh] md:h-[60vh] max-w-7xl mx-auto rounded-none flex flex-col items-center justify-center overflow-hidden border border-brutal-cement/10 shadow-2xl">
-            {/* Background Stage Image Slider */}
+            {/* Static Background Image */}
             <div
                 ref={bgRef}
-                className="absolute inset-0 z-0"
-                aria-label="Punto Organizasyon dev sahne ve konser sistemleri arka plan kayan görselleri"
+                className="absolute inset-0 z-0 bg-cover bg-center"
+                aria-label="Punto Organizasyon dev sahne ve konser sistemleri arka plan"
                 role="img"
                 style={{
-                    filter: 'blur(10px) grayscale(100%)', // Starts blurred and black/white
+                    backgroundImage: 'url("/hero/1.jpg")',
                     transform: 'scale(1.1)'
                 }}
             >
-                {heroImages.map((img, i) => (
-                    <div
-                        key={img}
-                        className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${i === currentImg ? 'opacity-100' : 'opacity-0'}`}
-                        style={{ backgroundImage: `url("${img}")` }}
-                    />
-                ))}
-                <div className="absolute inset-0 bg-brutal-black/60 mix-blend-multiply z-10"></div>
+                <div className="absolute inset-0 bg-brutal-black/40 mix-blend-multiply z-10"></div>
             </div>
 
             {/* Dynamic Spotlight / Glowing Orbs */}
@@ -138,18 +114,6 @@ export default function HeroArea() {
                     <span className="inline-block mx-1 md:mx-4 text-brutal-red opacity-50">•</span>
                     <span className="inline-block mx-1 md:mx-4">{t('hero.visual')}</span>
                 </h2>
-            </div>
-            
-            {/* Slider Navigation Dots */}
-            <div className="absolute bottom-6 md:bottom-8 z-20 flex gap-3">
-                {heroImages.map((_, idx) => (
-                    <button
-                        key={idx}
-                        onClick={() => setCurrentImg(idx)}
-                        className={`h-2 rounded-full transition-all duration-300 focus:outline-none ${idx === currentImg ? 'w-8 bg-brutal-red' : 'w-2 bg-brutal-cement/50 hover:bg-brutal-cement'}`}
-                        aria-label={`Slayt ${idx + 1}`}
-                    />
-                ))}
             </div>
             </div>
         </section>
