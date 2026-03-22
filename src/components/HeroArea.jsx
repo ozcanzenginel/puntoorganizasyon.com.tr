@@ -10,10 +10,6 @@ export default function HeroArea() {
     const title1Ref = useRef(null)
     const title2Ref = useRef(null)
 
-    const orb1Ref = useRef(null)
-    const orb2Ref = useRef(null)
-    const orb3Ref = useRef(null)
-
     useEffect(() => {
         let ctx = gsap.context(() => {
             // Intro Animation (Swapped delays so big title comes first)
@@ -25,23 +21,6 @@ export default function HeroArea() {
                 { scale: 0.9, opacity: 0 },
                 { scale: 1, opacity: 1, duration: 1, stagger: 0.1, ease: 'power4.out', delay: 0.6 }
             )
-
-            // Dynamic Glowing Orbs Animation (Spotlight effect)
-            const moveOrb = (orb, xRange, yRange, dur) => {
-                gsap.to(orb, {
-                    x: `random(-${xRange}, ${xRange})`,
-                    y: `random(-${yRange}, ${yRange})`,
-                    duration: `random(${dur - 2}, ${dur + 2})`,
-                    repeat: -1,
-                    yoyo: true,
-                    ease: 'sine.inOut',
-                    onComplete: () => moveOrb(orb, xRange, yRange, dur) // Keep generating new random paths
-                })
-            }
-
-            if (orb1Ref.current) moveOrb(orb1Ref.current, 200, 150, 8)
-            if (orb2Ref.current) moveOrb(orb2Ref.current, 150, 200, 10)
-            if (orb3Ref.current) moveOrb(orb3Ref.current, 300, 100, 12)
 
             // Scroll Animation
             ScrollTrigger.create({
@@ -60,11 +39,6 @@ export default function HeroArea() {
                         opacity: 0,
                         color: '#E53E3E'
                     }, 0)
-                    .to([orb1Ref.current, orb2Ref.current, orb3Ref.current], {
-                        opacity: 0,
-                        scale: 0.5,
-                        duration: 1
-                    }, 0)
             })
         }, heroRef)
 
@@ -82,36 +56,33 @@ export default function HeroArea() {
                 role="img"
                 style={{
                     backgroundImage: 'url("/hero/1.jpg")',
-                    transform: 'scale(1.1)'
+                    transform: 'scale(1)'
                 }}
             >
-                <div className="absolute inset-0 bg-brutal-black/40 mix-blend-multiply z-10"></div>
+                {/* Overlay reduced for better clarity while keeping text readable */}
+                <div className="absolute inset-0 bg-brutal-black/20 z-10"></div>
             </div>
 
-            {/* Dynamic Spotlight / Glowing Orbs */}
-            <div className="absolute inset-0 z-[2] overflow-hidden pointer-events-none opacity-60 mix-blend-screen">
-                <div ref={orb1Ref} className="absolute top-1/4 left-1/4 w-[50vw] h-[50vw] max-w-[600px] max-h-[600px] bg-brutal-red/30 rounded-full blur-[100px] md:blur-[150px] transform -translate-x-1/2 -translate-y-1/2"></div>
-                <div ref={orb2Ref} className="absolute bottom-1/4 right-1/4 w-[40vw] h-[40vw] max-w-[500px] max-h-[500px] bg-brutal-cement/10 rounded-full blur-[100px] md:blur-[150px] transform translate-x-1/2 translate-y-1/2"></div>
-                <div ref={orb3Ref} className="absolute top-1/2 left-1/2 w-[60vw] h-[60vw] max-w-[800px] max-h-[800px] bg-brutal-red/20 rounded-full blur-[120px] md:blur-[180px] transform -translate-x-1/2 -translate-y-1/2"></div>
-            </div>
+            {/* Dynamic Spotlight / Glowing Orbs Removed - causing blur perception */}
 
             <div className="relative z-10 flex flex-col items-center text-center px-4 w-full">
                 <h1
                     ref={title2Ref}
                     className="text-4xl sm:text-5xl md:text-6xl lg:text-[5rem] leading-none font-black tracking-tight text-brutal-cement transition-all w-full mb-4 md:mb-6"
+                    style={{ textShadow: '0 4px 12px rgba(0,0,0,0.5)' }}
                 >
                     {t('hero.title1')}<br />{t('hero.title2')}
                 </h1>
                 <h2
                     ref={title1Ref}
-                    className="text-xs md:text-sm lg:text-base font-mono font-bold tracking-widest text-brutal-cement uppercase"
+                    className="text-xs md:text-sm lg:text-base font-mono font-bold tracking-widest text-brutal-cement uppercase bg-brutal-black/30 backdrop-blur-sm py-2 px-4 inline-block"
                 >
                     <span className="inline-block mx-1 md:mx-4">{t('hero.audio')}</span>
-                    <span className="inline-block mx-1 md:mx-4 text-brutal-red opacity-50">•</span>
+                    <span className="inline-block mx-1 md:mx-4 text-brutal-red opacity-80">•</span>
                     <span className="inline-block mx-1 md:mx-4">{t('hero.light')}</span>
-                    <span className="inline-block mx-1 md:mx-4 text-brutal-red opacity-50">•</span>
+                    <span className="inline-block mx-1 md:mx-4 text-brutal-red opacity-80">•</span>
                     <span className="inline-block mx-1 md:mx-4">{t('hero.stage')}</span>
-                    <span className="inline-block mx-1 md:mx-4 text-brutal-red opacity-50">•</span>
+                    <span className="inline-block mx-1 md:mx-4 text-brutal-red opacity-80">•</span>
                     <span className="inline-block mx-1 md:mx-4">{t('hero.visual')}</span>
                 </h2>
             </div>
