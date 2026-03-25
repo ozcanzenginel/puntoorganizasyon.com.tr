@@ -11,7 +11,8 @@ export default function FeaturesList() {
         t('features.f2'),
         t('features.f3'),
         t('features.f4'),
-        t('features.f5')
+        t('features.f5'),
+        t('features.f6')
     ]
 
     useEffect(() => {
