@@ -53,7 +53,15 @@ export default function FloatingIslandNav() {
                 <div className="flex gap-4 md:gap-8 text-xs font-bold tracking-widest uppercase items-center">
                     <Link to="/" className="hover:text-brutal-red transition-colors duration-300 hidden md:block">{t('nav.systems')}</Link>
                     <Link to="/gallery" className="hover:text-brutal-red transition-colors duration-300 hidden md:block">{t('nav.projects')}</Link>
-                    <a href="/#contact" className="hover:text-brutal-red transition-colors duration-300 hidden md:block">{t('nav.contact')}</a>
+                    <a 
+                        href="https://wa.me/905070670029" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="hidden lg:flex items-center gap-2 px-4 py-2 bg-brutal-red text-white text-[10px] font-black tracking-widest uppercase hover:bg-white hover:text-brutal-red transition-all duration-300"
+                        style={{ clipPath: 'polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)' }}
+                    >
+                        {t('contact.btn')}
+                    </a>
 
                     <div className="flex gap-2 border-l border-brutal-cement/20 pl-4 md:pl-8">
                         {langs.map(l => (

@@ -9,11 +9,14 @@ export default function ContactImpact() {
                 {t('contact.desc1')} <span className="text-white">{t('contact.desc2')}</span> {t('contact.desc3')} <span className="text-brutal-red">{t('contact.desc4')}</span> {t('contact.desc5')}
             </p>
 
-            <button
-                className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight text-brutal-cement hover:text-brutal-red transition-colors duration-300 mb-10 px-4 whitespace-nowrap"
+            <a
+                href="https://wa.me/905070670029"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-3xl md:text-5xl lg:text-6xl font-bold tracking-tight text-brutal-cement hover:text-brutal-red transition-colors duration-300 mb-10 px-4 whitespace-nowrap block"
             >
                 {t('contact.btn')}
-            </button>
+            </a>
 
             <address className="flex flex-col md:flex-row gap-10 md:gap-16 font-mono text-sm tracking-widest text-brutal-cement/60 mb-12 not-italic">
                 <div className="flex flex-col items-center">

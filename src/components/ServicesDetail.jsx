@@ -96,13 +96,13 @@ export default function ServicesDetail() {
                         >
                             <div className="absolute top-0 left-0 w-full h-1 bg-brutal-red transform scale-x-0 origin-left group-hover:scale-x-100 transition-transform duration-500 ease-out"></div>
 
-                            <div className="card-inner flex flex-col h-full z-10 relative pointer-events-none">
-                                <div className="text-brutal-cement mb-6 opacity-80 group-hover:opacity-100 group-hover:text-brutal-red transition-all duration-300">{service.icon}</div>
-                                <h3 className="text-lg md:text-xl font-bold tracking-tight text-white mb-6 pr-4 leading-tight">
+                            <div className="card-inner flex flex-col h-full z-10 relative">
+                                <div className="text-brutal-cement mb-6 opacity-80 group-hover:opacity-100 group-hover:text-brutal-red transition-all duration-300 pointer-events-none">{service.icon}</div>
+                                <h3 className="text-lg md:text-xl font-bold tracking-tight text-white mb-6 pr-4 leading-tight pointer-events-none">
                                     {service.title}
                                 </h3>
 
-                                <ul className="flex-grow flex flex-col gap-4">
+                                <ul className="flex-grow flex flex-col gap-4 pointer-events-none mb-8">
                                     {service.items.map((item, i) => (
                                         <li key={i} className="flex items-start gap-3">
                                             <span className="text-brutal-red font-mono mt-1" aria-hidden="true">]</span>
@@ -110,6 +110,16 @@ export default function ServicesDetail() {
                                         </li>
                                     ))}
                                 </ul>
+
+                                <a
+                                    href={`https://wa.me/905070670029?text=${encodeURIComponent(`Merhaba, ${service.title} hakkında teklif almak istiyorum.`)}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="mt-auto inline-flex items-center gap-2 font-mono text-xs font-bold tracking-widest text-brutal-red hover:text-white transition-colors duration-300 group/btn"
+                                >
+                                    <span className="border-b border-brutal-red/30 group-hover/btn:border-white pb-1">{t('contact.btn')}</span>
+                                    <span className="text-lg">→</span>
+                                </a>
                             </div>
                         </article>
                     ))}
