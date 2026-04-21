@@ -13,15 +13,12 @@ export default function GallerySection() {
     useEffect(() => {
         const ctx = gsap.context(() => {
             gsap.from('.gallery-item', {
-                scrollTrigger: {
-                    trigger: containerRef.current,
-                    start: 'top 80%',
-                },
                 y: 50,
                 opacity: 0,
                 duration: 0.8,
                 stagger: 0.1,
-                ease: 'power3.out'
+                ease: 'power3.out',
+                delay: 0.2
             })
         }, containerRef)
 

@@ -1,8 +1,9 @@
 {
     "nav": {
+        "home": "ANASAYFA",
         "systems": "Sistemler",
         "projects": "Galeri",
-        "contact": "İletişim"
+        "contact": "İLETİŞİM"
     },
     "hero": {
         "audio": "SES",
@@ -91,9 +92,10 @@
         "desc3": " unutulmaz hale getirmek için ",
         "desc4": "Punto Ses Organizasyon",
         "desc5": " her zaman yanınızda.",
-        "btn": "TEKLİF AL",
+        "btn": "TEKLİF AL TIKLA",
+        "directions": "YOL TARİFİ",
         "locTitle": "LOKASYON",
-        "loc": "📍 Buca / İZMİR",
+        "loc": "Yenigün Mahallesi, 222/47 Sokak, No:10/A Buca/İzmir",
         "opTitle": "MERKEZ",
         "techTitle": "TEKNİK"
     }

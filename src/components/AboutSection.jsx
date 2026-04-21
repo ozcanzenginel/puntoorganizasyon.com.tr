@@ -30,7 +30,7 @@ export default function AboutSection() {
 
     return (
         <section ref={sectionRef} id="about" aria-label="Hakkımızda" className="py-16 md:py-20 bg-brutal-black border-y border-brutal-cement/20 relative">
-            <div className="max-w-7xl mx-auto px-8 relative z-10" ref={textRef}>
+            <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10" ref={textRef}>
 
                 {/* HAKKIMIZDA (About Us) Section */}
                 <div className="mb-16 md:mb-24 text-center md:text-left max-w-4xl mx-auto md:mx-0">

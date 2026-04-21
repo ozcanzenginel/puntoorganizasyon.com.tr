@@ -37,7 +37,7 @@ export default function FeaturesList() {
 
     return (
         <section className="py-12 md:py-16 bg-brutal-black relative border-b border-brutal-cement/20" ref={containerRef} aria-labelledby="features-heading">
-            <div className="max-w-7xl mx-auto px-8 relative z-10 flex flex-col items-center">
+            <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10 flex flex-col items-center">
 
                 <ul className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-4">
                     {features.map((feature, idx) => (

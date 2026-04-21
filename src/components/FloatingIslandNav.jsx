@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Link } from 'react-router-dom'
@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next'
 export default function FloatingIslandNav() {
     const { t, i18n } = useTranslation()
     const navRef = useRef(null)
+    const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
     useEffect(() => {
         let ctx = gsap.context(() => {
@@ -42,33 +43,60 @@ export default function FloatingIslandNav() {
         <div className="fixed top-2 md:top-4 left-0 right-0 z-40 flex justify-center pointer-events-none px-4 md:px-8">
             <nav
                 ref={navRef}
-                className="w-full max-w-7xl backdrop-blur-3xl px-4 md:px-8 py-3 rounded-none border border-brutal-cement/10 flex justify-between items-center pointer-events-auto"
+                className="w-full max-w-7xl backdrop-blur-3xl px-4 md:px-8 py-3 rounded-none border border-brutal-cement/10 flex flex-col md:flex-row md:justify-between md:items-center pointer-events-auto"
             >
-                <div className="flex items-center gap-4">
+                <div className="flex justify-between items-center w-full md:w-auto">
                     <Link to="/">
                         <img src="/punto-logo-new.png" alt="Punto Logo" className="h-8 md:h-10 lg:h-12 object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.2)] transition-transform duration-300 hover:scale-105" onError={(e) => e.currentTarget.style.display = 'none'} />
                     </Link>
+                    <button 
+                        className="md:hidden text-white hover:text-brutal-red transition-colors p-2"
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            {isMobileMenuOpen ? (
+                                <>
+                                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                                </>
+                            ) : (
+                                <>
+                                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                                </>
+                            )}
+                        </svg>
+                    </button>
                 </div>
 
-                <div className="flex gap-4 md:gap-8 text-xs font-bold tracking-widest uppercase items-center">
-                    <Link to="/" className="hover:text-brutal-red transition-colors duration-300 hidden md:block">{t('nav.systems')}</Link>
-                    <Link to="/gallery" className="hover:text-brutal-red transition-colors duration-300 hidden md:block">{t('nav.projects')}</Link>
+                <div className={`${isMobileMenuOpen ? 'flex' : 'hidden'} md:flex flex-col md:flex-row gap-4 md:gap-8 text-xs font-bold tracking-widest uppercase items-center mt-4 md:mt-0`}>
+                    <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-brutal-red transition-colors duration-300 w-full md:w-auto text-center py-2 md:py-0 border-b md:border-b-0 border-brutal-cement/10">{t('nav.home')}</Link>
+                    <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-brutal-red transition-colors duration-300 w-full md:w-auto text-center py-2 md:py-0 border-b md:border-b-0 border-brutal-cement/10">{t('nav.systems')}</Link>
+                    <Link to="/gallery" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-brutal-red transition-colors duration-300 w-full md:w-auto text-center py-2 md:py-0 border-b md:border-b-0 border-brutal-cement/10">{t('nav.projects')}</Link>
                     <a 
-                        href="https://wa.me/905070670029" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="hidden lg:flex items-center gap-2 px-4 py-2 bg-brutal-red text-white text-[10px] font-black tracking-widest uppercase hover:bg-white hover:text-brutal-red transition-all duration-300"
-                        style={{ clipPath: 'polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%)' }}
+                        href="/#contact" 
+                        onClick={(e) => {
+                            setIsMobileMenuOpen(false);
+                            if (window.location.pathname === '/') {
+                                e.preventDefault();
+                                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                            }
+                        }}
+                        className="hover:text-brutal-red transition-colors duration-300 w-full md:w-auto text-center py-2 md:py-0 border-b md:border-b-0 border-brutal-cement/10"
                     >
-                        {t('contact.btn')}
+                        {t('nav.contact')}
                     </a>
 
-                    <div className="flex gap-2 border-l border-brutal-cement/20 pl-4 md:pl-8">
+                    <div className="flex gap-4 border-t md:border-t-0 md:border-l border-brutal-cement/20 pt-4 md:pt-0 pl-0 md:pl-8 justify-center w-full md:w-auto pb-2 md:pb-0">
                         {langs.map(l => (
                             <button
                                 key={l}
-                                onClick={() => changeLanguage(l)}
-                                className={`transition-colors duration-300 ${i18n.language.startsWith(l) ? 'text-brutal-red font-black border-b border-brutal-red' : 'text-brutal-cement hover:text-white'}`}
+                                onClick={() => {
+                                    changeLanguage(l);
+                                    setIsMobileMenuOpen(false);
+                                }}
+                                className={`transition-colors duration-300 ${i18n.language?.startsWith(l) ? 'text-brutal-red font-black border-b border-brutal-red' : 'text-brutal-cement hover:text-white'}`}
                             >
                                 {l.toUpperCase()}
                             </button>

@@ -43,7 +43,7 @@ export default function SystemStack() {
 
     return (
         <section className="py-32 bg-brutal-black relative overflow-hidden">
-            <div className="max-w-7xl mx-auto px-8 relative z-10">
+            <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
                 <h2 className="text-3xl md:text-5xl font-bold mb-16 text-brutal-cement tracking-tight">
                     {t('systemStack.title1')} <span className="text-brutal-red">{t('systemStack.title2')}</span>
                 </h2>

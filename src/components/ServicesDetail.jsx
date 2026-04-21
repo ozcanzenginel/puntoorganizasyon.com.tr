@@ -86,7 +86,7 @@ export default function ServicesDetail() {
 
     return (
         <section className="py-16 md:py-20 bg-[#111] relative overflow-hidden border-b border-brutal-cement/20" aria-labelledby="services-heading">
-            <div className="max-w-7xl mx-auto px-8 relative z-10">
+            <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     {services.map((service, idx) => (
@@ -112,9 +112,7 @@ export default function ServicesDetail() {
                                 </ul>
 
                                 <a
-                                    href={`https://wa.me/905070670029?text=${encodeURIComponent(`Merhaba, ${service.title} hakkında teklif almak istiyorum.`)}`}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                    href="tel:+905070670029"
                                     className="mt-auto inline-flex items-center gap-2 font-mono text-xs font-bold tracking-widest text-brutal-red hover:text-white transition-colors duration-300 group/btn"
                                 >
                                     <span className="border-b border-brutal-red/30 group-hover/btn:border-white pb-1">{t('contact.btn')}</span>

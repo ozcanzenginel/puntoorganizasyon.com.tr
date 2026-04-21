@@ -31,7 +31,7 @@ export default function LiveTerminal() {
         <section className="bg-brutal-black py-24 border-t border-brutal-cement/20 relative overflow-hidden h-[400px]">
             <div className="absolute inset-0 bg-gradient-to-b from-brutal-black via-transparent to-brutal-black z-10 pointer-events-none"></div>
 
-            <div className="max-w-7xl mx-auto px-8 relative opacity-50">
+            <div className="max-w-7xl mx-auto px-4 md:px-8 relative opacity-50">
                 <div ref={scrollRef} className="font-mono text-xs md:text-sm tracking-widest text-[#EBEBEB]/70 whitespace-pre-line leading-loose">
                     {logs.join('\n')}
                 </div>

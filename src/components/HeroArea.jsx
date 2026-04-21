@@ -86,15 +86,6 @@ export default function HeroArea() {
                     <span className="inline-block mx-1 md:mx-4">{t('hero.visual')}</span>
                 </h2>
 
-                <a
-                    href="https://wa.me/905070670029"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group relative px-10 py-5 bg-brutal-red text-white font-black text-lg md:text-xl tracking-tighter uppercase transition-all duration-300 hover:bg-white hover:text-brutal-red active:scale-95 shadow-[0_15px_30px_-10px_rgba(229,62,62,0.4)] hover:shadow-[0_20px_40px_-10px_rgba(229,62,62,0.6)]"
-                    style={{ clipPath: 'polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%)' }}
-                >
-                    {t('contact.btn')} <span className="ml-2 group-hover:translate-x-1 inline-block transition-transform">→</span>
-                </a>
             </div>
             </div>
         </section>

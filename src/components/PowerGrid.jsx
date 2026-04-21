@@ -19,7 +19,7 @@ export default function PowerGrid() {
                 }}></div>
             </div>
 
-            <div className="relative z-10 max-w-7xl mx-auto px-8">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8">
                 <div className="grid grid-cols-1 xl:grid-cols-5 gap-8 xl:gap-12 items-stretch">
                     {/* Left Side: Stats */}
                     <div className="xl:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-px bg-brutal-cement/20 brutal-border border border-brutal-cement/20">

@@ -1,8 +1,9 @@
 {
     "nav": {
+        "home": "HOME",
         "systems": "Systems",
         "projects": "Gallery",
-        "contact": "Contact"
+        "contact": "CONTACT"
     },
     "hero": {
         "audio": "SOUND",
@@ -92,8 +93,9 @@
         "desc4": "professional touch.",
         "desc5": "",
         "btn": "GET AN ESTIMATE",
+        "directions": "GET DIRECTIONS",
         "locTitle": "LOCATION",
-        "loc": "📍 Buca / IZMIR",
+        "loc": "Yenigün Mahallesi, 222/47 Sokak, No:10/A Buca/İzmir",
         "opTitle": "CENTER",
         "techTitle": "TECHNICAL"
     }

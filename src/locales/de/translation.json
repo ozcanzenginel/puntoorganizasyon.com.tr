@@ -1,8 +1,9 @@
 {
     "nav": {
+        "home": "STARTSEITE",
         "systems": "Systeme",
         "projects": "Galerie",
-        "contact": "Kontakt"
+        "contact": "KONTAKT"
     },
     "hero": {
         "audio": "KLANG",
@@ -92,8 +93,9 @@
         "desc4": "professionellen Note",
         "desc5": " unvergesslich zu machen.",
         "btn": "ANGEBOT EINHOLEN",
+        "directions": "WEGBESCHREIBUNG",
         "locTitle": "STANDORT",
-        "loc": "📍 Buca / IZMIR",
+        "loc": "Yenigün Mahallesi, 222/47 Sokak, No:10/A Buca/İzmir",
         "opTitle": "ZENTRUM",
         "techTitle": "TECHNISCH"
     }

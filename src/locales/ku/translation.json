@@ -1,8 +1,9 @@
 {
     "nav": {
+        "home": "DESTPÊK",
         "systems": "Sîstem",
         "projects": "Galeriya",
-        "contact": "Têkilî"
+        "contact": "TÊKILÎ"
     },
     "hero": {
         "audio": "DENG",
@@ -92,8 +93,9 @@
         "desc4": "Punto Rêxistina Deng",
         "desc5": " her tim bi we re ye.",
         "btn": "PÊŞNÎYARA BIHAYÊ BIGIRIN",
+        "directions": "RÊBER",
         "locTitle": "CIH",
-        "loc": "📍 Buca / ÎZMÎR",
+        "loc": "Yenigün Mahallesi, 222/47 Sokak, No:10/A Buca/İzmir",
         "opTitle": "NAVENDA",
         "techTitle": "TEKNÎK"
     }
