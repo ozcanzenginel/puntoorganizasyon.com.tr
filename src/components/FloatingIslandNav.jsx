@@ -70,39 +70,41 @@ export default function FloatingIslandNav() {
                     </button>
                 </div>
 
-                <div className={`${isMobileMenuOpen ? 'flex' : 'hidden'} md:flex flex-col md:flex-row gap-4 md:gap-8 text-xs font-bold tracking-widest uppercase items-center mt-4 md:mt-0`}>
-                    <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-brutal-red transition-colors duration-300 w-full md:w-auto text-center py-2 md:py-0 border-b md:border-b-0 border-brutal-cement/10">{t('nav.home')}</Link>
-                    <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-brutal-red transition-colors duration-300 w-full md:w-auto text-center py-2 md:py-0 border-b md:border-b-0 border-brutal-cement/10">{t('nav.systems')}</Link>
-                    <Link to="/gallery" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-brutal-red transition-colors duration-300 w-full md:w-auto text-center py-2 md:py-0 border-b md:border-b-0 border-brutal-cement/10">{t('nav.projects')}</Link>
-                    <a 
-                        href="/#contact" 
-                        onClick={(e) => {
-                            setIsMobileMenuOpen(false);
-                            if (window.location.pathname === '/') {
-                                e.preventDefault();
-                                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
-                            }
-                        }}
-                        className="hover:text-brutal-red transition-colors duration-300 w-full md:w-auto text-center py-2 md:py-0 border-b md:border-b-0 border-brutal-cement/10"
-                    >
+                {/* Desktop Links */}
+                <div className="hidden md:flex gap-8 text-xs font-bold tracking-widest uppercase items-center">
+                    <Link to="/" className="hover:text-brutal-red transition-colors duration-300">{t('nav.home')}</Link>
+                    <Link to="/" className="hover:text-brutal-red transition-colors duration-300">{t('nav.systems')}</Link>
+                    <Link to="/gallery" className="hover:text-brutal-red transition-colors duration-300">{t('nav.projects')}</Link>
+                    <a href="/#contact" onClick={(e) => { if (window.location.pathname === '/') { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); } }} className="hover:text-brutal-red transition-colors duration-300">
                         {t('nav.contact')}
                     </a>
-
-                    <div className="flex gap-4 border-t md:border-t-0 md:border-l border-brutal-cement/20 pt-4 md:pt-0 pl-0 md:pl-8 justify-center w-full md:w-auto pb-2 md:pb-0">
+                    <div className="flex gap-4 border-l border-brutal-cement/20 pl-8 justify-center">
                         {langs.map(l => (
-                            <button
-                                key={l}
-                                onClick={() => {
-                                    changeLanguage(l);
-                                    setIsMobileMenuOpen(false);
-                                }}
-                                className={`transition-colors duration-300 ${i18n.language?.startsWith(l) ? 'text-brutal-red font-black border-b border-brutal-red' : 'text-brutal-cement hover:text-white'}`}
-                            >
+                            <button key={l} onClick={() => changeLanguage(l)} className={`transition-colors duration-300 ${i18n.language?.startsWith(l) ? 'text-brutal-red font-black border-b border-brutal-red' : 'text-brutal-cement hover:text-white'}`}>
                                 {l.toUpperCase()}
                             </button>
                         ))}
                     </div>
                 </div>
+
+                {/* Mobile Menu Dropdown */}
+                {isMobileMenuOpen && (
+                    <div className="absolute top-full left-0 w-full mt-2 bg-[#111] border border-brutal-cement/20 flex flex-col items-center py-6 gap-6 shadow-2xl md:hidden text-white pointer-events-auto">
+                        <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold tracking-widest uppercase hover:text-brutal-red">{t('nav.home')}</Link>
+                        <Link to="/" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold tracking-widest uppercase hover:text-brutal-red">{t('nav.systems')}</Link>
+                        <Link to="/gallery" onClick={() => setIsMobileMenuOpen(false)} className="text-sm font-bold tracking-widest uppercase hover:text-brutal-red">{t('nav.projects')}</Link>
+                        <a href="/#contact" onClick={(e) => { setIsMobileMenuOpen(false); if (window.location.pathname === '/') { e.preventDefault(); document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' }); } }} className="text-sm font-bold tracking-widest uppercase hover:text-brutal-red">
+                            {t('nav.contact')}
+                        </a>
+                        <div className="flex gap-6 mt-4 pt-4 border-t border-brutal-cement/20 w-4/5 justify-center">
+                            {langs.map(l => (
+                                <button key={l} onClick={() => { changeLanguage(l); setIsMobileMenuOpen(false); }} className={`transition-colors duration-300 font-bold ${i18n.language?.startsWith(l) ? 'text-brutal-red border-b border-brutal-red' : 'text-brutal-cement hover:text-white'}`}>
+                                    {l.toUpperCase()}
+                                </button>
+                            ))}
+                        </div>
+                    </div>
+                )}
             </nav>
         </div>
     )
